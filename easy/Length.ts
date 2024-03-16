@@ -1,5 +1,5 @@
 // 配列の長さを返すLength<T>を実装してください。
-type Length<T extends any[]> = T["length"]
+type Length<T extends any[]> = T["length"];
 
 type tesla = ["tesla", "model 3", "model X", "model Y"];
 type spaceX = [
