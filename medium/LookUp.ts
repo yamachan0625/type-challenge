@@ -1,5 +1,5 @@
 // LookUpを実装してください
-type LookUp<T,V> = T extends {type: V} ? T :never
+type LookUp<T, V> = T extends { type: V } ? T : never;
 
 interface Cat {
   type: "cat";
