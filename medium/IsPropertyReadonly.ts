@@ -1,4 +1,4 @@
-type Test = {
+type TestAAAAAAAAA = {
   firstName: string;
   lastName: string;
   readonly age: number;
@@ -16,6 +16,6 @@ type IsPropertyReadonly<T, K extends keyof T> = IfNotEquals<
   { -readonly [P in K]: T[P] }
 >;
 
-type Result = IsPropertyReadonly<Test, "firstName">; // expected to be `false`
-type Result2 = IsPropertyReadonly<Test, "lastName">; // expected to be `false`
-type Result3 = IsPropertyReadonly<Test, "age">; // expected to be `true`
+type Result = IsPropertyReadonly<TestAAAAAAAAA, "firstName">; // expected to be `false`
+type Result2 = IsPropertyReadonly<TestAAAAAAAAA, "lastName">; // expected to be `false`
+type Result3 = IsPropertyReadonly<TestAAAAAAAAA, "age">; // expected to be `true`

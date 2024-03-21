@@ -1,5 +1,4 @@
 // UnionToIntersection<T>を実装してください。
-
 type UnionToIntersection１<T> = (
   T extends any ? (arg: T) => void : never
 ) extends (arg: infer U) => void
