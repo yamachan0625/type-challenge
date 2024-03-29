@@ -29,7 +29,11 @@ interface User3 {
   phone?: string;
   height?: number;
 }
+interface User4 {
+  hair?: string;
+}
 type User23 = Omit<User2 & User3, never>;
 type User234 = User2 & User3;
+type User2345 = Omit<User234, never>;
 
 type UserRequiredName = RequiredByKeys<User2, "name">; // { name: string; age?: number; address?: string }
