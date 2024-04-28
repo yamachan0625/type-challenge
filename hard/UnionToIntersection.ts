@@ -11,4 +11,5 @@ type UnionToIntersection<U> = (
   ? I
   : never;
 
-type I = UnionToIntersection<"foo" | 42 | true>; // expected to be 'foo' & 42 & true
+type I = UnionToIntersection<"foo" | 42 | true>; // never
+type II = Omit<UnionToIntersection<{ a: "aa" } | { b: "aa" }>, never>; // expected to be 'foo' & 42 & true
