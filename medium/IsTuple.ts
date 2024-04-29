@@ -11,3 +11,4 @@ type case3 = IsTuple<number[]>; // false
 type niuvre = [number]["length"]; // 1
 type niuvre2 = number[]["length"]; // number
 type niuvre3 = number extends 1 ? true : false; // false
+type niuvre4 = 1 extends number ? true : false; // true
